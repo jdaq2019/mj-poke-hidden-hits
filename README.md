@@ -45,9 +45,18 @@ M&J Poke Hidden Hits is designed to create a simple and enjoyable shopping exper
 
 This project is actively being developed and updated with new features and products.
 
-## Contact
+## Contact & Social Media
 
-For questions, product inquiries, or partnership opportunities, please contact M&J Poke Hidden Hits through our website or social media channels.
+**Email:**
+[mjpokehiddenhits@gmail.com](mailto:mjpokehiddenhits@gmail.com)
+
+**Instagram:**
+M&J Poke Hidden Hits (@mj_pokehiddenhits)
+
+**Facebook Group:**
+M&J's Poke Hidden Hits
+
+Follow us on social media for product drops, mystery pack releases, giveaways, grading reveals, and exclusive deals.
 
 ## Disclaimer
 
