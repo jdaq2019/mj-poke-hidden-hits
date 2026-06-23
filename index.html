@@ -2,109 +2,368 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M&J Poke Hidden Hits</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M&J Poke Hidden Hits</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#050505;
+    color:white;
+}
+
+header{
+    background:black;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:2px solid #6d28d9;
+}
+
+.navbar{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo{
+    height:80px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffcb05;
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('logo.jpg');
+    background-size:cover;
+    background-position:center;
+    min-height:700px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#ffcb05;
+}
+
+.hero p{
+    font-size:1.4rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffcb05;
+    color:black;
+    padding:15px 35px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:white;
+}
+
+.section{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+.section-title{
+    text-align:center;
+    color:#ffcb05;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-card{
+    background:#111;
+    border:1px solid #6d28d9;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+}
+
+.feature-card h3{
+    color:#ffcb05;
+    margin-bottom:15px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:#111;
+    border:1px solid #6d28d9;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.product-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    padding:20px 0 10px;
+}
+
+.product-card p{
+    padding-bottom:20px;
+}
+
+.mystery-pack{
+    background:linear-gradient(135deg,#22003d,#000);
+    border:2px solid #6d28d9;
+    border-radius:20px;
+    padding:50px;
+    text-align:center;
+}
+
+.mystery-pack h2{
+    color:#ffcb05;
+    font-size:3rem;
+}
+
+.price{
+    color:#00ff5e;
+    font-size:3rem;
+    margin:20px 0;
+    font-weight:bold;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social a{
+    background:#111;
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    border-radius:10px;
+    border:1px solid #6d28d9;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    gap:15px;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <div class="logo">
-        <img src="logo.jpg" alt="M&J Poke Hidden Hits Logo">
-    </div>
-    
+<div class="navbar">
+
+<img src="logo.jpg" class="logo" alt="M&J Poke Hidden Hits">
+
 <nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#mystery">Mystery Packs</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#mystery">Mystery Packs</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
-    
+
+</div>
 </header>
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
-<img src="logo.jpg" alt="M&J Poke Hidden Hits" class="hero-logo">
+<div class="hero-content">
 
-<h2>Catch Your Next Hidden Hit!</h2>
+<h1>Catch Your <span>Next Hidden Hit!</span></h1>
 
 <p>
-    Pokémon Singles • Graded Cards • Mystery Packs • Sealed Products
+Pokémon Singles • Graded Cards • Mystery Packs • Sealed Products
 </p>
 
-<button onclick="location.href='#products'">Shop Now</button>
-
-</section>
-
-<section id="products">
-
-<h2>Featured Products</h2>
-
-<div class="product-grid">
-
-    <div class="card">
-        <h3>PSA Graded Cards</h3>
-        <p>Premium graded Pokémon cards from top grading companies.</p>
-        <button>Coming Soon</button>
-    </div>
-
-    <div class="card">
-        <h3>Rare Singles</h3>
-        <p>Browse rare singles to complete your collection.</p>
-        <button>Coming Soon</button>
-    </div>
-
-    <div class="card">
-        <h3>Vintage Holos</h3>
-        <p>Classic holographic cards from vintage Pokémon sets.</p>
-        <button>Coming Soon</button>
-    </div>
+<a href="#products" class="btn">Shop Now</a>
 
 </div>
 
 </section>
 
-<section id="mystery">
+<section class="section">
 
-<h2>Mystery Packs</h2>
+<h2 class="section-title">What We Offer</h2>
 
-<div class="mystery-box">
+<div class="features">
 
-    <h3>Hidden Hits Mystery Pack</h3>
+<div class="feature-card">
+<h3>Pokémon Singles</h3>
+<p>Find the perfect card for your collection.</p>
+</div>
 
-    <p>
-        Every pack contains guaranteed holos, rares, and chances at high-value chase cards.
-    </p>
+<div class="feature-card">
+<h3>Graded Cards</h3>
+<p>PSA, CGC & BGS graded collectibles.</p>
+</div>
 
-    <p class="price">$10.00</p>
+<div class="feature-card">
+<h3>Mystery Packs</h3>
+<p>Hidden hits and exciting chase cards.</p>
+</div>
 
-    <button>Buy Now</button>
+<div class="feature-card">
+<h3>Sealed Products</h3>
+<p>ETBs, booster boxes and more.</p>
+</div>
 
 </div>
 
 </section>
 
-<section id="contact">
+<section class="section" id="products">
 
-<h2>Contact & Social Media</h2>
+<h2 class="section-title">Featured Products</h2>
 
-<p>📧 Email: <a href="mailto:mjpokehiddenhits@gmail.com">mjpokehiddenhits@gmail.com</a></p>
+<div class="products">
 
-<p>📸 Instagram:
-    <a href="https://www.instagram.com/mj_pokehiddenhits/" target="_blank">
-        @mj_pokehiddenhits
-    </a>
+<div class="product-card">
+<h3>PSA Graded Cards</h3>
+<p>Premium collector inventory coming soon.</p>
+</div>
+
+<div class="product-card">
+<h3>Rare Singles</h3>
+<p>Browse our latest Pokémon singles.</p>
+</div>
+
+<div class="product-card">
+<h3>Vintage Holos</h3>
+<p>Classic holographic cards available.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="mystery">
+
+<div class="mystery-pack">
+
+<h2>Hidden Hits Mystery Pack</h2>
+
+<p>
+Every pack contains guaranteed holos, rares, and chances at valuable chase cards.
 </p>
 
-<p>📘 Facebook Group: M&J's Poke Hidden Hits</p>
+<div class="price">$10.00</div>
+
+<a href="#" class="btn">Buy Now</a>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2 class="section-title">Connect With Us</h2>
+
+<div class="social">
+
+<a href="mailto:mjpokehiddenhits@gmail.com">
+📧 Email Us
+</a>
+
+<a href="https://www.instagram.com/mj_pokehiddenhits/" target="_blank">
+📸 Instagram
+</a>
+
+<a href="#">
+📘 Facebook Group
+</a>
+
+</div>
 
 </section>
 
 <footer>
-    <p>© 2026 M&J Poke Hidden Hits. All Rights Reserved.</p>
+
+<p>© 2026 M&J Poke Hidden Hits. All Rights Reserved.</p>
+
 </footer>
 
 </body>
