@@ -54,7 +54,7 @@ This project is actively being developed and updated with new features and produ
 M&J Poke Hidden Hits (@mj_pokehiddenhits)
 
 **Facebook Group:**
-M&J's Poke Hidden Hits
+M&J's Poke Hidden Hits (https://www.facebook.com/groups/1834447414626588)
 
 Follow us on social media for product drops, mystery pack releases, giveaways, grading reveals, and exclusive deals.
 
